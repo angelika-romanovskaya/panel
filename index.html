@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/reset-css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Noto+Serif+Georgian:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Панели из сотового картона</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a class="header__logo" href="example.com">
+                <img src="./img/logo.svg" alt="Logo">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="#" class="header__link">Главная</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Продукция</a></li>
+                    <li class="header__item"><a href="#" class="header__link">О компании</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Вакансии</a></li>
+                </ul>
+            </nav>
+            <div class="header__info">
+               <a href="mailto:angelika_romanovskaya_2002@mail.ru" class="header__email">angelika_romanovskaya_2002@mail.ru</a>
+               <a href="viber://chat?number=+375291539886" class="header__phone viber">+375291539886</a>
+               <a href="https://api.whatsapp.com/send?phone=375291539886" class="header__phone whatsapp">+375291539886</a>
+            </div>
+        </header>
+        <main class="main">
+            <div class="wrap">
+                <div class="wrap__item">
+                    <div class="main__img">
+                        <img src="./img/panel.jpg" alt="Panel">
+                    </div>
+                    <div class="main__data">
+                        <h1 class="main__title">Панели из сотового картона</h1>
+                        <p class="main__description">Сотовый картон применяется для решений в области упаковки, транспортировки, хранения и фиксации продукции. Из него изготавливаются коробки, поддоны, ложементы, демпферные прокладки, катушки и крестовины. Сотовый картон - отличная замена деревянным и пластиковым изделиям.</p>
+                        <span class="main__price">Цена: 20р./шт.</span>
+                    </div>
+                    <button class="main__btn btn" type="button">Заказать</button>
+                </div>
+                <form class="main__form form wrap__item">
+                    <h2 class="form__title">Задать вопрос</h2>
+                    <div class="form__wrap">
+                        <div class="form__item">
+                            <label class="form__label" for="name">Имя</label>
+                            <input class="form__input" type="text" id="name" name="name" placeholder="Введите имя">
+                            <p></p>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="email">E-mail</label>
+                            <input class="form__input" type="email" id="email" name="email" placeholder="Введите e-mail">
+                            <p></p>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="phone">Телефон</label>
+                            <input class="form__input" type="tel" id="phone" name="phone" placeholder="Введите номер телефона">
+                            <p></p>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="massage">Сообщение</label>
+                            <textarea class="form__input textarea" name="massage" id="massage" cols="23" rows="5" placeholder="Введите ваше сообщение"></textarea>
+                            <p></p>
+                        </div>
+                        <button class="form__btn btn" type="submit">Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

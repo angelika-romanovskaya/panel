@@ -1,0 +1,204 @@
+body{
+    font-size: 10px;
+    background: rgb(193, 192, 192);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    padding: 0 30px;
+    margin: 0 auto;
+    background: white;
+    height: 100vh;
+}
+
+.header {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo>img {
+    max-width: 150px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__item {
+    font-size: 1.8em;
+}
+.header__link {
+    text-decoration: none;
+    color: black;
+}
+
+.header__info {
+    display: grid;
+    grid-template-areas:
+        "viber email"
+        "whatsapp email";
+    grid-gap: 15px;
+    align-items: center;
+    font-size: 1.4em;
+}
+
+.header__email {
+    grid-area: email;
+    color: black;
+    text-decoration: none;
+    font-family: 'Noto Serif Georgian', serif;
+    font-weight: 400;
+}
+.header__phone {
+    color: black;
+    text-decoration: none;
+    font-family: 'Noto Serif Georgian', serif;
+    font-weight: 400;
+}
+.viber {
+    grid-area: viber;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.viber::before {
+    content: url("./img/viber.svg");
+    display:block;
+    width: 20px;
+    height: 20px;
+}
+
+.whatsapp {
+    grid-area: whatsapp;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.whatsapp::before {
+    content: url("./img/whatsapp.svg");
+    display:block;
+    width: 20px;
+    height: 20px;
+}
+
+.main {
+    margin-top: 50px;
+    padding: 0 30px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.wrap__item {
+    gap: 20px;
+}
+
+.wrap__item:first-child{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.main__data{
+    display: flex;
+    flex-direction: column;
+}
+
+.main__title {
+    font-size: 2.4em;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.main__description {
+    text-align: justify;
+    font-size: 1.4em;
+    line-height: 18px;
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+.main__img {
+    width: 350px;
+    height: 350px;
+}
+
+.main__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.main__price {
+    font-size: 2.6em;
+}
+
+.main__btn {
+    grid-column: span 2;
+}
+
+.btn {
+    background: rgb(104 200 19);
+    border: 1px solid gray;
+    color: white;
+    font-size: 1.6em;
+    font-weight: 600;
+    padding: 5px 50px;
+    text-transform: uppercase;
+}
+
+.main__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.form {
+
+}
+.form__title {
+    text-align: center;
+    font-size: 2em;
+    line-height: 24px;
+}
+.form__wrap {
+    display: flex;
+    flex-direction: column;
+}
+.form__item {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.form__label {
+    text-align: center;
+    font-size: 1.6em;
+}
+.form__input {
+    font-size: 1.6em;
+}
+
+.textarea{
+    resize: none;
+}
